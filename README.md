@@ -7,7 +7,7 @@
 **GitHub** clone into `/plugins` dir:
 
 ```sh
-git clone https://github.com/jan-vince/smallcontactform
+git clone https://github.com/webfils/smallcontactform
 ```
 
 **OctoberCMS backend**
@@ -29,13 +29,13 @@ You can set permissions to restrict access to *Settings > Small plugins > Contac
 "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/jan-vince/smallcontactform"
+      "url": "https://github.com/webfils/smallcontactform"
     }
 ]
 ```
 * run in command line
 ```sh
-composer require webfils/smallcontactform
+composer require janvince/smallcontactform
 ```
 
 
@@ -211,7 +211,7 @@ There are variables available in all email templates:
 Email can be send to form sender as confirmation.
 
 * You have to enter email address and name - it will be used as FROM field
-* Email subject can be manually added here (or edited in *Settings > Mail > Mail templates (code: smallcontactform::mail.autoreply)*)
+* Email subject can be manually added here (or edited in *Settings > Mail > Mail templates (code: janvince.smallcontactform::mail.autoreply)*)
 * Email TO address and name have to be assigned to form fields (in selections only corresponding field types are shown - if you don't see one, try to check it's type in Fields tab)
 * Email REPLY TO address can be set
 * Message field can be also assigned (and will be saved separately into database)
@@ -244,7 +244,7 @@ Translate plugin doesn't supports translation of individual repeater fields yet,
 
 #### Email templates
 
-You can create your own email templates in *Settings > Mail > Mail templates* (for hint look inside of default templates starting with *webfils.smallcontactform::*).
+You can create your own email templates in *Settings > Mail > Mail templates* (for hint look inside of default templates starting with *janvince.smallcontactform::*).
 
 Remember your email templates CODE and put in in Small Contact form email settings in *Settings > Small plugins > Contact form > Email tab*. For each language there can be specific template.
 
